@@ -1,3 +1,4 @@
+
 """생산실적 검증·집계 함수. 화면 코드와 분리해 Jupyter에서도 확인합니다."""
 import io
 import math
@@ -98,4 +99,4 @@ def 판정하기(df, 불량기준=3.0, 주의기준=2.5):
     return d
 
 def 판정요약(df):
-    return {name: int((df["판정"] == name).sum()) for name in ["불량", "주의", "정상", "계산불가"]}
+    return {name: int((df["판정"] == name).sum()) for name in ["불량", "주의", "정상", "계산불가"]}    
